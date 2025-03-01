@@ -6,17 +6,13 @@
     tools:context=".ui.log.LogFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
+
     <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Log Page" />
-
-    <TextView
-        android:id="@+id/text_log"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Loading profile..."
-        android:layout_gravity="center" />
-
-
+        android:text="Log Pain Occurrence"
+        android:textAlignment="center"
+        android:textSize="40dp" />
 </FrameLayout>
