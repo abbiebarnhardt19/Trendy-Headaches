@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Define custom text appearance for BottomNavigationView items -->
+    <style name="BottomNavTextAppearance">
+        <item name="android:textSize">20sp</item> <!-- Change this to your desired size -->
+        <item name="android:textColor">@color/text_icon_color</item> <!-- Optional: Change the text color -->
+    </style>
+</resources>
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_log">
+
+
+    <fragment
+        android:id="@+id/navigation_log"
+        android:name="com.example.myapplication.ui.log.LogFragment"
+        android:label="Log"
+        tools:layout="@layout/fragment_log" />
+
+    <fragment
+        android:id="@+id/navigation_table"
+        android:name="com.example.myapplication.ui.Table.TableFragment"
+        android:label="Table"
+        tools:layout="@layout/fragment_table" />
+
+    <fragment
+        android:id="@+id/navigation_stats"
+        android:name="com.example.myapplication.ui.stats.StatsFragment"
+        android:label="Stats"
+        tools:layout="@layout/fragment_stats" />
+
+    <fragment
+        android:id="@+id/navigation_graphs"
+        android:name="com.example.myapplication.ui.Graphs.GraphsFragment"
+        android:label="Graphs"
+        tools:layout="@layout/fragment_graphs" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.myapplication.ui.Profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+
+
+
+</navigation>
