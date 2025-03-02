@@ -71,9 +71,7 @@ public class LogFragment extends Fragment {
         // Initialize the ViewModel
         logViewModel = new ViewModelProvider(this).get(LogViewModel.class);
 
-        // Find the TextView and set its text
-        TextView textView = view.findViewById(R.id.text_log);
-        textView.setText(logViewModel.getLogData());  // Use the getter here
+
 
         return view;
     }
