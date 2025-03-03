@@ -7,107 +7,94 @@
     android:layout_height="match_parent"
     tools:context=".ui.log.LogFragment">
 
-    <!-- TODO: Update blank fragment layout -->
 
 
     <TextView
         android:id="@+id/log_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="412dp"
+        android:layout_height="50dp"
         android:text="Log Pain Occurrence"
         android:textAlignment="center"
         android:textSize="35dp"
+        android:textStyle="bold"
+        android:typeface="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.609"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.051"
-        android:textStyle="bold"
-        android:typeface="serif"/>
+        app:layout_constraintVertical_bias="0.04" />
 
     <TextView
         android:id="@+id/date_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Date"
+        android:layout_width="103dp"
+        android:layout_height="52dp"
+        android:gravity="center"
+        android:text="Date:"
         android:textSize="27dp"
         android:textStyle="bold"
         android:typeface="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.136" />
+        app:layout_constraintVertical_bias="0.1" />
+
 
     <EditText
-        android:id="@+id/enter_date"
-        android:layout_width="160dp"
-        android:layout_height="48dp"
+        android:id="@+id/editTextDate"
+        android:layout_width="280dp"
+        android:layout_height="51dp"
         android:ems="10"
-        android:inputType="text"
-        android:text="##/##/####"
-        android:textSize="27dp"
-        android:typeface="serif"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.104"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.19" />
-
-    <TextView
-        android:id="@+id/time_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Time"
-        android:textSize="27dp"
+        android:inputType="date"
+        android:textSize="22dp"
         android:textStyle="bold"
         android:typeface="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.663"
+        app:layout_constraintHorizontal_bias="0.923"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.134" />
-
-    <EditText
-        android:id="@+id/enter_time"
-        android:layout_width="160dp"
-        android:layout_height="48dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="00:00"
-        android:textSize="27dp"
-        android:typeface="serif"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.904"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.191" />
+        app:layout_constraintVertical_bias="0.101" />
 
     <TextView
         android:id="@+id/pain_level_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="175dp"
+        android:layout_height="48dp"
+        android:gravity="center"
         android:text="Pain Level"
         android:textSize="27dp"
         android:textStyle="bold"
         android:typeface="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.265" />
+        app:layout_constraintVertical_bias="0.16" />
+
+
+    <TextView
+        android:id="@+id/pain_bar_lables"
+        android:layout_width="393dp"
+        android:layout_height="38dp"
+        android:text="   1     2      3     4     5     6     7      8     9    10"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22" />
 
     <SeekBar
         android:id="@+id/pain_level_bar"
         style="@style/Widget.AppCompat.SeekBar.Discrete"
-        android:layout_width="365dp"
-        android:layout_height="50dp"
+        android:layout_width="385dp"
+        android:layout_height="45dp"
         android:max="10"
         android:min="1"
         android:progress="1"
@@ -116,24 +103,311 @@
         android:tickMark="@drawable/tick_mark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.586"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.364" />
+        app:layout_constraintVertical_bias="0.25" />
 
     <TextView
-        android:id="@+id/pain_bar_lables"
-        android:layout_width="360dp"
-        android:layout_height="wrap_content"
-        android:text="  1            3             5            7            9 "
-        android:textSize="20dp"
+        android:id="@+id/pain_type_label"
+        android:layout_width="176dp"
+        android:layout_height="43dp"
+        android:gravity="center"
+        android:text="Pain Type"
+        android:textSize="27dp"
         android:textStyle="bold"
+        android:typeface="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.313" />
+        app:layout_constraintVertical_bias="0.305" />
+
+    <com.example.myapplication.ToggleButtonGroupTableLayout
+        android:id="@+id/radGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.245"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38">
+
+        <TableRow
+            android:layout_width="370dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp">
+
+            <RadioButton
+                android:id="@+id/pain_type_one"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginEnd="20dp"
+                android:buttonTint="@color/text_icon_color"
+                android:text="Pain Type 1"
+                android:textColor="@color/text_icon_color"
+                android:textSize="22sp"
+                android:typeface="serif" />
+
+            <RadioButton
+                android:id="@+id/pain_type_two"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginEnd="20dp"
+                android:buttonTint="@color/text_icon_color"
+                android:text="Pain Type 2"
+                android:textColor="@color/text_icon_color"
+                android:textSize="22sp"
+                android:typeface="serif" />
+        </TableRow>
+
+    <TableRow
+        android:layout_height="35dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp">
+
+        <RadioButton
+        android:id="@+id/pain_type_three"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginEnd="20dp"
+        android:buttonTint="@color/text_icon_color"
+        android:text="Pain Type 3"
+        android:textColor="@color/text_icon_color"
+        android:textSize="22sp"
+        android:typeface="serif" />
+
+        <RadioButton
+        android:id="@+id/pain_type_four"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginEnd="30dp"
+        android:buttonTint="@color/text_icon_color"
+        android:text="Pain Type 4"
+        android:textColor="@color/text_icon_color"
+        android:textSize="22sp"
+        android:typeface="serif" />
+    </TableRow>
+    </com.example.myapplication.ToggleButtonGroupTableLayout>
+
+
+    <TextView
+        android:id="@+id/meds_label"
+        android:layout_width="116dp"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:text="Meds:"
+        android:textSize="27dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.455" />
+
+    <EditText
+        android:id="@+id/meds_text"
+        android:layout_width="269dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="abcdefghij, 0000 mg"
+        android:textSize="22dp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.455" />
+
+    <TextView
+        android:id="@+id/description_label"
+        android:layout_width="265dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Pain Description"
+        android:textSize="27dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.51" />
+
+    <EditText
+        android:id="@+id/edit_description"
+        android:layout_width="342dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:inputType="text"
+        android:scrollbars="vertical"
+        android:text="ouchie"
+        android:textSize="22dp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.231"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.551" />
+
+    <TextView
+        android:id="@+id/triggers_label"
+        android:layout_width="160dp"
+        android:layout_height="42dp"
+        android:gravity="center"
+        android:text="Triggers"
+        android:textSize="27dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.615" />
+
+    <CheckBox
+        android:id="@+id/trigger_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/text_icon_color"
+        android:text="Trigger 1"
+        android:textColor="@color/text_icon_color"
+        android:textSize="22sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.66" />
+
+    <CheckBox
+        android:id="@+id/trigger_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/text_icon_color"
+        android:text="Trigger 2"
+        android:textColor="@color/text_icon_color"
+        android:textSize="22sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.66" />
+
+    <CheckBox
+        android:id="@+id/trigger_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/text_icon_color"
+        android:text="Trigger 3"
+        android:textColor="@color/text_icon_color"
+        android:textSize="22sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.71" />
+
+    <CheckBox
+        android:id="@+id/trigger_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/text_icon_color"
+        android:text="Trigger 4"
+        android:textColor="@color/text_icon_color"
+        android:textSize="22sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.71" />
+
+    <TextView
+        android:id="@+id/notes_label"
+        android:layout_width="106dp"
+        android:layout_height="33dp"
+        android:gravity="center"
+        android:text="Notes"
+        android:textSize="27dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.027"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <EditText
+        android:id="@+id/edit_notes"
+        android:layout_width="352dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:inputType="text"
+        android:scrollbars="vertical"
+        android:text="blah blah blah"
+        android:textSize="22dp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.81" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="155dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/text_icon_color"
+        android:text="Submit"
+        android:textColor="@color/background_color"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.828"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.895" />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="155dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/text_icon_color"
+        android:text="Cancel"
+        android:textColor="@color/background_color"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.895" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

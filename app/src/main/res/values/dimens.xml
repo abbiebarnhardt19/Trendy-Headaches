@@ -4,6 +4,6 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="design_bottom_navigation_text_size" tools:override="true">30sp</dimen>
     <dimen name="design_bottom_navigation_active_text_size" tools:override="true">30sp</dimen>
-    <dimen name="seek_bar_thickness">9dp</dimen>
-    <dimen name="seek_bar_thumb_size">35dp</dimen>
+    <dimen name="seek_bar_thickness">5dp</dimen>
+    <dimen name="seek_bar_thumb_size">25dp</dimen>
 </resources>
