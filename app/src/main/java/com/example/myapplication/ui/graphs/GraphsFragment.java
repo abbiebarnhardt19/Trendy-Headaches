@@ -1,4 +1,4 @@
-package com.example.myapplication.ui.Graphs;
+package com.example.myapplication.ui.graphs;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

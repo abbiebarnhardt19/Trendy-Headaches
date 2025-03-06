@@ -5,38 +5,54 @@
     android:id="@+id/mobile_navigation"
     app:startDestination="@+id/navigation_log">
 
-
+    <!-- Log Fragment -->
     <fragment
         android:id="@+id/navigation_log"
         android:name="com.example.myapplication.ui.log.LogFragment"
         android:label="Log"
-        tools:layout="@layout/fragment_log" />
+        tools:layout="@layout/fragment_log">
 
+        <!-- Action to navigate to SubmitFragment -->
+        <action
+            android:id="@+id/action_navigation_log_to_navigation_submit"
+            app:destination="@id/navigation_submit" />
+    </fragment>
+
+    <!-- Submit Fragment -->
+    <fragment
+        android:id="@+id/navigation_submit"
+        android:name="com.example.myapplication.ui.submit.SubmitFragment"
+        android:label="Submit"
+        tools:layout="@layout/fragment_submit" />
+    <action
+        android:id="@+id/action_navigation_submit_to_navigation_log"
+        app:destination="@id/navigation_log" />
+
+    <!-- Table Fragment -->
     <fragment
         android:id="@+id/navigation_table"
-        android:name="com.example.myapplication.ui.Table.TableFragment"
+        android:name="com.example.myapplication.ui.table.TableFragment"
         android:label="Table"
         tools:layout="@layout/fragment_table" />
 
+    <!-- Stats Fragment -->
     <fragment
         android:id="@+id/navigation_stats"
         android:name="com.example.myapplication.ui.stats.StatsFragment"
         android:label="Stats"
         tools:layout="@layout/fragment_stats" />
 
+    <!-- Graphs Fragment -->
     <fragment
         android:id="@+id/navigation_graphs"
-        android:name="com.example.myapplication.ui.Graphs.GraphsFragment"
+        android:name="com.example.myapplication.ui.graphs.GraphsFragment"
         android:label="Graphs"
         tools:layout="@layout/fragment_graphs" />
 
+    <!-- Profile Fragment -->
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.example.myapplication.ui.Profile.ProfileFragment"
+        android:name="com.example.myapplication.ui.profile.ProfileFragment"
         android:label="Profile"
         tools:layout="@layout/fragment_profile" />
-
-
-
-
 </navigation>

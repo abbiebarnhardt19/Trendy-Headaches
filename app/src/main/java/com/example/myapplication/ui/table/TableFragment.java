@@ -1,4 +1,4 @@
-package com.example.myapplication.ui.Table;
+package com.example.myapplication.ui.table;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

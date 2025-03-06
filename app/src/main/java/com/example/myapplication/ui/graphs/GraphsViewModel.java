@@ -1,4 +1,4 @@
-package com.example.myapplication.ui.Graphs;
+package com.example.myapplication.ui.graphs;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

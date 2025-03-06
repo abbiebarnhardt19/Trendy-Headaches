@@ -21,7 +21,7 @@
         app:layout_constraintHorizontal_bias="0.038"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintVertical_bias="0.03" />
 
 
     <EditText
@@ -38,13 +38,13 @@
         app:layout_constraintHorizontal_bias="0.786"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.045" />
+        app:layout_constraintVertical_bias="0.025" />
 
     <TextView
         android:id="@+id/pain_level_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pain Level"
+        android:text="Pain Level*"
         android:textSize="27dp"
         android:textStyle="bold"
         android:typeface="serif"
@@ -53,13 +53,13 @@
         app:layout_constraintHorizontal_bias="0.048"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.123" />
+        app:layout_constraintVertical_bias="0.103" />
 
     <TextView
         android:id="@+id/pain_bar_lables"
         android:layout_width="393dp"
         android:layout_height="38dp"
-        android:text="   1     2      3     4     5     6     7      8     9    10"
+        android:text="   0    1     2    3     4    5     6    7     8    9    10"
         android:textSize="20dp"
         android:textStyle="bold"
         android:typeface="serif"
@@ -68,7 +68,7 @@
         app:layout_constraintHorizontal_bias="0.416"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.18" />
+        app:layout_constraintVertical_bias="0.16" />
 
     <SeekBar
         android:id="@+id/pain_level_bar"
@@ -76,8 +76,8 @@
         android:layout_width="385dp"
         android:layout_height="45dp"
         android:max="10"
-        android:min="1"
-        android:progress="5"
+        android:min="0"
+        android:progress="0"
         android:progressDrawable="@drawable/seek_bar"
         android:thumb="@drawable/seek_thumb"
         android:tickMark="@drawable/tick_mark"
@@ -85,14 +85,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.215" />
+        app:layout_constraintVertical_bias="0.195" />
 
     <TextView
         android:id="@+id/pain_type_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Pain Type"
+        android:text="Pain Type*"
         android:textSize="27dp"
         android:textStyle="bold"
         android:typeface="serif"
@@ -101,7 +101,7 @@
         app:layout_constraintHorizontal_bias="0.046"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.28" />
+        app:layout_constraintVertical_bias="0.26" />
 
 
     <com.example.myapplication.ToggleButtonGroupTableLayout
@@ -113,7 +113,7 @@
         app:layout_constraintHorizontal_bias="0.684"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.356">
+        app:layout_constraintVertical_bias="0.336">
 
         <TableRow
             android:layout_width="370dp"
@@ -190,7 +190,7 @@
         app:layout_constraintHorizontal_bias="0.108"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.44" />
+        app:layout_constraintVertical_bias="0.42" />
 
     <EditText
         android:id="@+id/meds_text"
@@ -198,30 +198,31 @@
         android:layout_height="45dp"
         android:ems="10"
         android:inputType="text"
+        android:scrollbars="vertical"
         android:text="abcdefghij, 0000 mg"
         android:textSize="22dp"
         android:typeface="serif"
-        android:scrollbars="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.295"
+        app:layout_constraintHorizontal_bias="0.292"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.482" />
 
     <TextView
         android:id="@+id/description_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pain Description (optional)"
+        android:text="Pain Description"
         android:textSize="27dp"
         android:textStyle="bold"
         android:typeface="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.325"
+        app:layout_constraintHorizontal_bias="0.071"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.559" />
+        app:layout_constraintVertical_bias="0.546" />
 
     <EditText
         android:id="@+id/edit_description"
@@ -238,22 +239,22 @@
         app:layout_constraintHorizontal_bias="0.309"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.626" />
+        app:layout_constraintVertical_bias="0.606" />
 
     <TextView
         android:id="@+id/triggers_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Triggers (optional)"
+        android:text="Triggers"
         android:textSize="27dp"
         android:textStyle="bold"
         android:typeface="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintHorizontal_bias="0.04"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.685" />
+        app:layout_constraintVertical_bias="0.664" />
 
     <CheckBox
         android:id="@+id/trigger_one"
@@ -269,7 +270,7 @@
         app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.751" />
+        app:layout_constraintVertical_bias="0.731" />
 
     <CheckBox
         android:id="@+id/trigger_two"
@@ -285,7 +286,7 @@
         app:layout_constraintHorizontal_bias="0.811"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.751" />
+        app:layout_constraintVertical_bias="0.731" />
 
     <CheckBox
         android:id="@+id/trigger_three"
@@ -301,7 +302,7 @@
         app:layout_constraintHorizontal_bias="0.047"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.805" />
+        app:layout_constraintVertical_bias="0.785" />
 
     <CheckBox
         android:id="@+id/trigger_four"
@@ -317,10 +318,10 @@
         app:layout_constraintHorizontal_bias="0.811"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.805" />
+        app:layout_constraintVertical_bias="0.785" />
 
     <Button
-        android:id="@+id/submit_button"
+        android:id="@+id/submitButton"
         android:layout_width="200dp"
         android:layout_height="60dp"
         android:backgroundTint="@color/text_icon_color"
@@ -331,12 +332,10 @@
         android:typeface="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.904" />
-
-
+        app:layout_constraintVertical_bias="0.875" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
